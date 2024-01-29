@@ -1,0 +1,375 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+/* ------FOR ALL P */
+p {
+    font-weight: 700;
+    color: #111;
+}
+/* ------HEADER */
+header {
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.233);
+}
+.logo {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: rgb(177, 143, 143);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 720;
+}
+
+.btn-connexion {
+    margin: -20px;
+    border-bottom: 2px solid rgb(177, 143, 143);
+
+}
+
+.navbar a:hover {
+    color: rgb(177, 143, 143);
+}
+.cssnav{
+    display: none;
+}
+
+/* ----FOR ALL SECTIONS */
+section{
+    padding: 100px;
+}
+
+/* ------PHOTO SECTION */
+.acceuil {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./gg.webp");
+    background-size: cover;
+}
+
+.contenu1 {
+    width: 70%;
+    text-align: center;
+}
+
+.contenu1 h2 {
+    color: rgb(0, 0, 0);
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.contenu1 p {
+    color: rgb(224, 218, 129);
+    font-size: 16px;
+
+}
+
+.cssbtn {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(228, 219, 100);
+    background: rgba(0, 0,0, 0.555 );
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.cssbtn:hover {
+    letter-spacing: 4px;
+}
+
+/* -------A PROPOS */
+.row{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col50{
+    width: 50%;
+}
+.csstitre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.csstexte{
+    margin-bottom: 20px;
+    color: rgb(177, 143, 143);
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.col50 img{
+    height: 350px;
+    width: 600px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(139, 60, 91, 0.8);
+}
+/*  --------OFFRES */
+.contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+
+}
+.box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+.imbox{
+    width: 100%;
+    height: 300px;
+}
+.imbox img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.titre3 a{
+    margin-left: 500px;
+}
+
+/* ------CONTACT */
+.form{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.form h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.inputboite{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputboite input,textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(177, 143, 143);
+    background: rgba(0, 0, 0, 0.616);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    width: 120px;
+}
+
+/* -----LOCATION */
+.location{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./maps1.jfif");
+    background-size: cover;
+}
+.map {
+    width: 70%;
+    text-align: center;
+}
+
+.map h2 {
+    color: rgb(0, 0, 0);
+    font-size: 1.8em;
+    text-transform: capitalize;
+}
+
+.map a {
+    color: rgb(224, 218, 129);
+    font-size: 1em;
+    font-weight: bolder;
+}
+/* -----FOOTER */
+footer{
+    padding: 20px 40px;
+    background: rgba(65, 50, 50, 0.39);
+    text-align: center;
+}
+footer p{
+    color: rgb(0, 0, 0);
+
+}
+
+/* css pour les tele */
+@media screen and (max-width:768px) {
+    section{
+        padding: 50px 0px;
+    }
+    p {
+        font-weight: 600;
+    }
+    /* HEADER */
+    .navbar{
+        display: none;
+    }
+    .cssnav{
+        display: block;
+    }
+    .logo {
+        font-size: 26px;
+    }
+    /* PHOTO SECTION */
+    .contenu1 {
+        width: 95%;
+    }
+    .contenu1 h2{
+        font-size: 25px;
+    }
+    /* a propos */
+    .csstexte{
+        font-size: 28px;
+        text-align: center;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col50 p{
+        text-align: center;
+        padding-left: 20px;
+    }
+    .col50{
+        width: 100%;
+    }
+    .col50 img{
+        width: 350px;
+        margin: 8px 0px 5px 5px;
+    }
+    /* offres */
+    .csstitre p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .titre3 a{
+        margin-left: 120px;
+    }
+    /* contact */
+    .form{
+        padding: 75px 20px;
+        width: 385px;
+        margin-left: 0px;
+    }
+    .inputboite input,textarea{
+        width: 95%;
+    }
+    /* location */
+    .location{
+        margin-top: 50px;
+    }
+    /* footer */
+    footer{
+        padding: 10px 40px;
+        height: 70px;
+    }
+
+}
+
+/* css pour les tablettes */
+@media screen and (min-width:768px) and (max-width:1024px){
+    
+    section{
+        padding: 50px 20px;
+    }
+    /* HEADER */
+    .navbar{
+        display: none;
+    }
+    .cssnav{
+        display: block;
+    }
+    /* a propos */
+    .csstexte{
+        font-size: 30px;
+        text-align: center;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col50 p{
+        text-align: center;
+        padding-left: 25px;
+    }
+    .col50{
+        width: 100%;
+    }
+    .col50 img{
+        width: 90%;
+        margin: 50px;
+    }
+    /* offres */
+    .csstitre p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .titre3 a{
+        margin-left: 320px;
+    }
+    /* contact */
+    .form{
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+
+}
+
+
+
